@@ -5,10 +5,10 @@ plugins {
 }
 
 android {
-    namespace = "com.android.kmm_mvi_koin.android"
+    namespace = "com.android.kmm.android"
     compileSdk = 34
     defaultConfig {
-        applicationId = "com.android.kmm_mvi_koin.android"
+        applicationId = "com.android.kmm.android"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
