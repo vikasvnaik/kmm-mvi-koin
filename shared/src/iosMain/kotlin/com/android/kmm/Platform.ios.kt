@@ -1,4 +1,4 @@
-package com.android.kmm_mvi_koin
+package com.android.kmm
 
 import platform.UIKit.UIDevice
 

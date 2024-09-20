@@ -1,4 +1,4 @@
-package com.android.kmm_mvi_koin.android
+package com.android.kmm.android
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.shape.RoundedCornerShape

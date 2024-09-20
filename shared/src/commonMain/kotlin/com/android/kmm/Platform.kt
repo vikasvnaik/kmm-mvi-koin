@@ -1,4 +1,4 @@
-package com.android.kmm_mvi_koin
+package com.android.kmm
 
 interface Platform {
     val name: String

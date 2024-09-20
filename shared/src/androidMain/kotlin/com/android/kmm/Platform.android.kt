@@ -1,4 +1,4 @@
-package com.android.kmm_mvi_koin
+package com.android.kmm
 
 class AndroidPlatform : Platform {
     override val name: String = "Android ${android.os.Build.VERSION.SDK_INT}"
