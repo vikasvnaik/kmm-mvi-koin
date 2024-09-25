@@ -40,6 +40,10 @@ kotlin {
         commonTest.dependencies {
             implementation(libs.kotlin.test)
         }
+        androidMain.dependencies {
+                implementation(libs.ktor.client.okhttp)
+                implementation(libs.androidx.lifecycle.viewmodel.ktx)
+        }
     }
 }
 
