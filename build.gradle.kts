@@ -5,4 +5,5 @@ plugins {
     alias(libs.plugins.kotlinAndroid).apply(false)
     alias(libs.plugins.kotlinMultiplatform).apply(false)
     alias(libs.plugins.compose.compiler).apply(false)
+    kotlin("plugin.serialization") version "1.8.10" apply false
 }
