@@ -37,6 +37,7 @@ kotlin {
             implementation(libs.ktor.serialization.kotlinx.json)
             implementation(libs.ktor.client.content.negotiation)
             implementation(libs.koin.core)
+            implementation(libs.koin.compose)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
@@ -44,6 +45,7 @@ kotlin {
         androidMain.dependencies {
                 implementation(libs.ktor.client.okhttp)
                 implementation(libs.androidx.lifecycle.viewmodel.ktx)
+                implementation(libs.koin.android)
         }
     }
 }

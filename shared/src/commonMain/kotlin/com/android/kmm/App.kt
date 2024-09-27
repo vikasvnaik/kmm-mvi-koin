@@ -10,15 +10,16 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import org.jetbrains.compose.ui.tooling.preview.Preview
+import org.koin.compose.koinInject
 
 @Composable
 @Preview
-fun App() {
-    appView()
+fun App(greeting: Greeting = koinInject()) {
+    appView(greeting)
 }
 
 @Composable
-fun appView(){
+fun appView(greeting: Greeting){
 
     MaterialTheme {
         var showContent by remember { mutableStateOf(false) }
@@ -27,9 +28,9 @@ fun appView(){
                 Text("Click me!")
             }
             AnimatedVisibility(showContent) {
-                val greeting = remember { Greeting().greet() }
+                val greetingText = remember { greeting.greet() }
                 Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
-                    Text("Compose: $greeting")
+                    Text("Compose: $greetingText")
                 }
             }
         }

@@ -4,7 +4,8 @@
     <application
         android:allowBackup="false"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:name=".MainApplication">
         <activity
             android:name="com.android.kmm.android.MainActivity"
             android:exported="true">
