@@ -31,7 +31,6 @@ kotlin {
     }
 
     sourceSets {
-        val settingsVersion = "1.0.0"
         commonMain.dependencies {
             //put your multiplatform dependencies here
             implementation(compose.ui)
@@ -45,7 +44,7 @@ kotlin {
             implementation(libs.ktor.client.logging)
             implementation(libs.koin.core)
             implementation(libs.koin.compose)
-            implementation(libs.russhwolf.settingse)
+            implementation(libs.russhwolf.settings)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
