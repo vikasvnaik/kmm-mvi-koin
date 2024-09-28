@@ -12,7 +12,7 @@ import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.onStart
 import kotlinx.coroutines.flow.stateIn
 
-internal class PostsRepository(scope: CoroutineScope, private val postsApi: PostsApi) {
+internal class PostsRepository(private val scope: CoroutineScope, private val postsApi: PostsApi) {
     private val refresh = MutableSharedFlow<Unit>()
 
     private val allPosts: StateFlow<List<Post>> =

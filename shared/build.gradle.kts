@@ -31,6 +31,7 @@ kotlin {
     }
 
     sourceSets {
+        val settingsVersion = "1.0.0"
         commonMain.dependencies {
             //put your multiplatform dependencies here
             implementation(compose.ui)
@@ -40,8 +41,11 @@ kotlin {
             implementation(compose.components.resources)
             implementation(libs.ktor.serialization.kotlinx.json)
             implementation(libs.ktor.client.content.negotiation)
+            implementation(libs.ktor.client.core)
+            implementation(libs.ktor.client.logging)
             implementation(libs.koin.core)
             implementation(libs.koin.compose)
+            implementation(libs.russhwolf.settingse)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
@@ -50,6 +54,9 @@ kotlin {
                 implementation(libs.ktor.client.okhttp)
                 implementation(libs.androidx.lifecycle.viewmodel.ktx)
                 implementation(libs.koin.android)
+        }
+        iosMain.dependencies {
+            implementation(libs.ktor.client.core.darwin)
         }
     }
 }
